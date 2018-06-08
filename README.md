@@ -1,8 +1,11 @@
 # Redis bindings for Azure Functions
 
- Allows a function to interact with Redis. Following operations are currently supported: 
+[![Build status](https://ci.appveyor.com/api/projects/status/x2hcuua5jpm86c2p/branch/master?svg=true)](https://ci.appveyor.com/project/fbeltrao/azurefunctions-contrib-redis)
+
+ Facilities the usage of Redis in an Azure Function. Following operations are currently supported:
+
+- set a key velue 
 - add/insert item to lists
-- set a key
 - increment a key value
 
 Other operations with Redis can be achieved using the ```[RedisDatabase]``` attribute which will resolve a IDatabase.
