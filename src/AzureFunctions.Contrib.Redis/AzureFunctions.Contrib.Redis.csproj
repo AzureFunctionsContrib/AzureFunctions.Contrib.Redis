@@ -1,0 +1,31 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <RootNamespace>Fbeltrao.AzureFunctionExtensions</RootNamespace>
+    <AssemblyName>AzureFunctions.Contrib.Redis</AssemblyName>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
+    <PackageTags>Azure Functions</PackageTags>
+    <RepositoryUrl>https://github.com/fbeltrao/AzureFunctionExtensions</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+    <PackageProjectUrl>https://github.com/fbeltrao/AzureFunctionExtensions</PackageProjectUrl>
+    <Description>Set of Azure Function Extensions. Currently bindings:
+- Redis
+- HttpCall
+- EventGrid
+- Azure SignalR</Description>
+    <Version>1.0.0-beta1</Version>
+    <NeutralLanguage>en</NeutralLanguage>
+    <Authors>fbeltrao</Authors>
+    <Company>fbeltrao</Company>
+    <Product>Azure Functions Extensions</Product>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Azure.WebJobs.Extensions" Version="3.0.0-beta5" />
+    <PackageReference Include="StackExchange.Redis.StrongName.Core" Version="1.1.605" />
+    <PackageReference Include="System.IdentityModel.Tokens.Jwt" Version="5.1.4" />
+  </ItemGroup>
+
+</Project>
